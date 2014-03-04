@@ -1,0 +1,22 @@
+{
+  "name": "jesse-website",
+  "version": "0.1.0",
+  "homepage": "https://github.com/YoungElPaso/jesse-website",
+  "authors": [
+    "Jesse Sutherland <jesse.a.sutherland@gmail.com>"
+  ],
+  "description": "Basic frontend tools for my site",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/_bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
