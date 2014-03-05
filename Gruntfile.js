@@ -39,4 +39,7 @@ module.exports = function(grunt) {
 
     // plugin tasks
     grunt.loadNpmTasks('grunt-jekyll');
+
+    // contrib tasks
+    grunt.loadNpmTasks('grunt-contrib-concat');
 };
