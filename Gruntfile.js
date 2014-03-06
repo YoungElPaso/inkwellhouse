@@ -36,10 +36,10 @@ module.exports = function(grunt) {
     });
 
 
-    // plugin tasks
+    // Load grunt-jekyll plugin tasks.
     grunt.loadNpmTasks('grunt-jekyll');
 
-    // contrib tasks
+    // Load contrib tasks.
     grunt.loadNpmTasks('grunt-contrib-concat');
 
 
@@ -50,6 +50,7 @@ module.exports = function(grunt) {
     }
     grunt.registerTask('jekyll:consolidate', jekyllConsolidateDesc, jekyllConsolidate);
 
-    // Default task. Run standard jekyll server.
+    // Register jekyll-serve task. Consolidates front-end assets,
+    // and runs standard jekyll server.
     grunt.registerTask('jekyll-serve', ['jekyll:consolidate', 'jekyll:server']);
 };

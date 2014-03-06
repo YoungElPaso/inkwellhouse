@@ -1,3 +1,4 @@
 # Adding ingmore rule for jekyll _site folder
 /_site
 /node_modules
+/app
