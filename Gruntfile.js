@@ -23,7 +23,8 @@ module.exports = function(grunt) {
             prod: {
                 src: 'templates',
                 dest: 'prod'
-            }
+            },
+            consolidate: {}
         },
 
         watch: { // for development run 'grunt watch'
@@ -34,12 +35,21 @@ module.exports = function(grunt) {
         }
     });
 
-    // Default task. Run standard jekyll server.
-    grunt.registerTask('default', 'jekyll:server');
 
     // plugin tasks
     grunt.loadNpmTasks('grunt-jekyll');
 
     // contrib tasks
     grunt.loadNpmTasks('grunt-contrib-concat');
+
+
+    // Define new jekyll task consolidate.
+    var jekyllConsolidateDesc = 'A simple consolidator task for asset folders';
+    var jekyllConsolidate =  function() {
+        grunt.log.write('running consolidation...');
+    }
+    grunt.registerTask('jekyll:consolidate', jekyllConsolidateDesc, jekyllConsolidate);
+
+    // Default task. Run standard jekyll server.
+    grunt.registerTask('jekyll-serve', ['jekyll:consolidate', 'jekyll:server']);
 };
