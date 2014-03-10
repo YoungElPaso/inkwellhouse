@@ -51,8 +51,8 @@ module.exports = function(grunt) {
                tasks: ['consolidate:dev']
            },*/
            dev: {
-                files: ['*.html', '**/*.css', '**/*.js'],
-                tasks: ['consolidate:dev', 'copy:dev', 'jekyll:server']
+                files: ['*.html', 'dev-assets/**/*.css', 'dev-assets/**/*.js'],
+                tasks: ['consolidate:dev', 'copy:dev']
             }
         }
     });
