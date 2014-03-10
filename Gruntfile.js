@@ -31,17 +31,28 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     dest: 'foobar'
-                }
+                },
             }
         },
+                copy: {
+                    dev: {
+                        files: [
+                          {expand: true, src:['dev-assets/css/**'], dest: 'stylesheets/', flatten:true, filter: 'isFile'},
+                                                     {expand: true, src:['dev-assets/js/**'], dest: 'javascripts/', flatten:true, filter: 'isFile'}
+
+                        ]
+                    }
+                },
+
+
         watch: { // for development run 'grunt watch'
  /*          consolidate: {
                files: ['*.html'],
                tasks: ['consolidate:dev']
            },*/
-           jekyll: {
-                files: ['*.html', 'stylesheets/*.css', 'javascripts/*.js'],
-                tasks: ['consolidate:dev', 'jekyll:server']
+           dev: {
+                files: ['*.html', '**/*.css', '**/*.js'],
+                tasks: ['consolidate:dev', 'copy:dev', 'jekyll:server']
             }
         }
     });
@@ -52,9 +63,8 @@ module.exports = function(grunt) {
 
     // Load contrib tasks.
     grunt.loadNpmTasks('grunt-contrib-concat');
-
-    // Load contrib watch task.
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
 
     // Define new task consolidate.
