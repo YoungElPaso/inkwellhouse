@@ -1,4 +1,5 @@
 {
+  "name": "Jesse Website", 
   "engines": {
     "node": ">= 0.10.0"
   },
