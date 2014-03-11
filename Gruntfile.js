@@ -3,7 +3,7 @@
 
 /*global module:false*/
 module.exports = function(grunt) {
-
+    
     // Project configuration.
     grunt.initConfig({
 
@@ -34,17 +34,35 @@ module.exports = function(grunt) {
                 },
             }
         },
-                copy: {
-                    dev: {
-                        files: [
-                          {expand: true, src:['dev-assets/css/**'], dest: 'stylesheets/', flatten:true, filter: 'isFile'},
-                                                     {expand: true, src:['dev-assets/js/**'], dest: 'javascripts/', flatten:true, filter: 'isFile'}
+        // Config for copy task.
+        copy: {
+            dev: {
+                files: [
+                  {expand: true, src:['dev-assets/css/**'], dest: 'stylesheets/', flatten:true, filter: 'isFile'},
+                                             {expand: true, src:['dev-assets/js/**'], dest: 'javascripts/', flatten:true, filter: 'isFile'}
 
-                        ]
-                    }
+                ]
+            }
+        },
+        // Config for concat task.
+        pkg: grunt.file.readJSON('package.json'),
+        concat: {
+            css: {
+                options: {
+                    stripBanners: true,
+                    banner: '/*! <%= pkg.name %> */'
                 },
-
-
+                src: ['dev-assets/css/**/*.css'],
+                dest: 'stylesheets/concat-style.css',
+                nonull: true
+            },
+            js: {
+                src: ['dev-assets/js/**/*.js'],
+                dest: 'javascripts/concat-js.js',
+                nonull: true
+            }
+        }, 
+        // Config for watch task.
         watch: { // for development run 'grunt watch'
  /*          consolidate: {
                files: ['*.html'],
@@ -52,7 +70,7 @@ module.exports = function(grunt) {
            },*/
            dev: {
                 files: ['*.html', 'dev-assets/**/*.css', 'dev-assets/**/*.js'],
-                tasks: ['consolidate:dev', 'copy:dev']
+                tasks: ['concat:css', 'jekyll:server']
             }
         }
     });
