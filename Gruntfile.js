@@ -70,14 +70,26 @@ module.exports = function(grunt) {
            },*/
            dev: {
                 files: ['*.html', 'dev-assets/**/*.css', 'dev-assets/**/*.js'],
-                tasks: ['concat:css', 'jekyll:server']
+                tasks: ['concat:css']
             }
+        },
+        // Config for concurrent task. Need it cause server might be blocking or watch, or vice versa.
+        concurrent: {
+            dev: {
+                tasks:  ['watch:dev', 'jekyll:server'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }    
         }
     });
 
 
     // Load grunt-jekyll plugin tasks.
     grunt.loadNpmTasks('grunt-jekyll');
+
+    // Load grunt-concurrent tasks.
+    grunt.loadNpmTasks('grunt-concurrent');
 
     // Load contrib tasks.
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -98,4 +110,7 @@ module.exports = function(grunt) {
     // Register jekyll-serve task. Consolidates front-end assets,
     // and runs standard jekyll server.
     grunt.registerTask('jekyll-serve', ['consolidate', 'jekyll:server']);
+
+    // Added new task, gonna try to have watch just run concat and allow jekyll server to do its own watch stuff.
+    grunt.registerTask('jekyll-dev', ['jekyll:server', 'watch:dev']);
 };
