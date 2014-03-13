@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ page.title }}</title>
     <!-- Including concat and minified css-->
-    <link href="stylesheets/concat-style.css" rel="stylesheet" media="(min-width: 400px)">
+    <link href="/stylesheets/concat-style.css" rel="stylesheet" media="(min-width: 400px)">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,26 +13,20 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
-
+    <div class="container">
         <header>
-          <h1>project X</h1>
+          <h1>project X {{site.url}} </h1>
           {% include menu.html %}
        </header>
-
-        <hr>
 
         <section id="main_content">
             {{ content }}
         </section>
 
         {% include footer.html %}
-      
-      </div>
     </div>
     
     <!-- Including concat and minified js -->
-    <script src="javascripts/concat-js.js"></script>
+    <script src="/javascripts/concat-js.js"></script>
   </body>
 </html>
