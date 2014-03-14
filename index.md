@@ -6,4 +6,4 @@ title: ProjectX
 Welcome to my site
 ------------------
 
-Some paragraph!?
+Some paragraph!? Or two!
