@@ -3,7 +3,7 @@ layout: default
 title: ProjectX
 ---
 
-Welcome to my site
-------------------
+Generic Header
+----
 
 Some paragraph!? Or two!
