@@ -3,7 +3,7 @@ layout: default
 title: ProjectX
 ---
 
-Generic Header
+Hola.
 ----
 
-Some paragraph!? Or two!
+Here are the musings and ramblings of Jesse Sutherland, a web developer living in  Montr&eacute;al.

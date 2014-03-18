@@ -1,4 +1,29 @@
+/***
+ * JesseSutherland.ca main theme.
+ **/
+
+/* This theme stuff should be inlined, as it should remain small (above the
+ fold) and be site centric, ie not a framework.*/
+
 body.readingatnight {
     background-color: #333;
-    color: #fff;
-} 
+    color: #FFF;
+}
+
+body {
+    background: #333;
+    color: #FFF;
+}
+
+footer {
+    background: #3A3A3A;
+    color: #BBB;
+    margin-top: 2em;
+    padding: 0.25em;
+}
+
+
+/* Bootstrap overrides */
+.nav-pills > li > a {
+    border-radius: 0;    
+}
