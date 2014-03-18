@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         // Config for watch task.
         watch: {
             dev: {
-                files: ['*.html', 'dev-assets/**/*.css', 'dev-assets/**/*.js'],
+                files: ['**/*.html','**/*.md','**/*.markdown', 'dev-assets/**/*.css', 'dev-assets/**/*.js', '!app/*', '!fonts/*', '!node_modules/*', '!_site/*'],
                 tasks: ['concat:css']
             }
         },

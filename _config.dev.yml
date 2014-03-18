@@ -1,1 +1,2 @@
 baseurl: ''
+exclude: ['node_modules', '_site', 'app']
