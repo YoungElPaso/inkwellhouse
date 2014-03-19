@@ -1,6 +1,6 @@
 <ul class="nav nav-pills">
-    <li class="active"><a href="{{ site.baseurl  }}/">Home</a></li>
-    <li><a href="{{ site.baseurl  }}/about"> About </a></li>
-    <li><a href="{{ site.baseurl  }}/contact">Contact</a></li>
+    {% assign url = page.url|remove:'index.html' %}
+    {% for item in site.navigation %}
+    <li {% if url  == item.url %}class="active"{% endif %}><a title="{{ item.title }}" href="{{ site.baseurl | append: item.url }}">{{ item.text }}</a></li>
+    {% endfor %}
 </ul>
-

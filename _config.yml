@@ -1,1 +1,12 @@
 baseurl: "http://youngelpaso.github.io/jesse-website"
+exclude: ['node_modules', '_site', 'app']
+navigation:
+- text: Home
+  url: /
+  title: Homepage
+- text: About
+  url: /about/
+  title: About this site
+- text: Contact
+  url: /contact/
+  title: Contact me
