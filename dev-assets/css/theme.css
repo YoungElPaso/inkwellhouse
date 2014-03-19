@@ -22,6 +22,11 @@ footer {
     padding: 0.25em;
 }
 
+header {
+    background: url(../../images/sunset-cropped.png) -100px -75px no-repeat;
+    height :150px;
+}
+
 
 /* Bootstrap overrides */
 .nav-pills > li > a {
