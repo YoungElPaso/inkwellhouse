@@ -14,8 +14,3 @@ Actually, I’m looking forward to coding in general. There’s always more to t
 
 Oh also, I used to have a rap centric radio show on Ckut and I prefer to use Linux for business and pleasure.
 
-Here's my social media credentials:
-  * google+
-  * facebook
-  * linkedin
-
