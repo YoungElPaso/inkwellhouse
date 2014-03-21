@@ -5,30 +5,52 @@
 /* This theme stuff should be inlined, as it should remain small (above the
  fold) and be site centric, ie not a framework.*/
 
-body.readingatnight {
-    background-color: #333;
-    color: #FFF;
+body {
+    background: #FAFAFA;
 }
 
-body {
-    background: #333;
-    color: #FFF;
+header {
+    background: #000 url(../../images/sunset-cropped.png) -100px -65px no-repeat;
+    padding: 0.5em 0 0 0;
 }
 
 footer {
-    background: #3A3A3A;
-    color: #BBB;
     margin-top: 2em;
     padding: 0.25em;
 }
 
-header {
-    background: url(../../images/sunset-cropped.png) -100px -75px no-repeat;
-    height :150px;
+/* Logo */
+header h1 {
+    color: #FFF;
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+header h1 span.icon-ylp {
+    background: #FFF;
+    border-radius: 100px;
+    color: #000;
+    margin: 0 20px;
+    padding: 10px;
 }
 
 
 /* Bootstrap overrides */
 .nav-pills > li > a {
     border-radius: 0;    
+}
+
+/* Use a darker theme on mobile */
+@media (max-width: 320px) {
+    body {
+        background: #333;
+        color: #FFF;
+    }
+
+    footer {
+        background: #3A3A3A;
+        color: #BBB;
+    }
 }
