@@ -1,8 +1,6 @@
 Here's my social media credentials:
-{% assign sociallinks = "foobar" %}
-{{ sociallinks }}
-
-  * google+
-  * facebook
-  * linkedin
-
+<ul>
+    {% for link in site.sociallinks %}
+         <li><a href="{{link.url}}"> {{ link.text }} </a></li>
+    {% endfor %}
+</ul>

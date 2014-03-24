@@ -10,3 +10,12 @@ navigation:
 - text: Contact
   url: /contact/
   title: Contact me
+sociallinks:
+- text: google+
+  url: https://www.google.com/+JesseSutherland
+- text: linkedin
+  url: https://www.linkedin.com/in/jessesutherland
+- text: facebook
+  url: https://www.facebook.com/jesseasutherland
+- text: github
+  url: https://github.com/youngelpaso 

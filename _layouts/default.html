@@ -21,13 +21,15 @@
           {% include menu.html %}
        </header>
 
-        <section id="main-content">
-            {{ content }}
-        </section>
-        
-        <section id="social-side-bar" class="panel">
-            {% include social.html %}
-        </section>
+        <div class="row">
+            <section id="main-content" class="col-md-8">
+                {{ content }}
+            </section>
+            
+            <section id="social-side-bar" class="col-md-4">
+                {% include social.html %}
+            </section>
+        </div>
 
         {% include footer.html %}
     </div>
