@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: #000 url(../../images/sunset-cropped.png) -100px -65px no-repeat;
+    background: #000 url(../images/sunset-cropped.png) -100px -65px no-repeat;
     padding: 0.5em 0 0 0;
 }
 
@@ -28,7 +28,7 @@ header h1 {
     height: 100px;
     text-align: center;
     text-transform: uppercase;
-    background: url(/dev-assets/images/logo-v2.png) 0 0 no-repeat;
+    background: url(../images/logo-v2.png) 0 0 no-repeat;
 }
 /* Need to put in media query, shouldn't use all the time
 header h1 span.icon-ylp {
