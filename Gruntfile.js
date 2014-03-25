@@ -33,6 +33,16 @@ module.exports = function(grunt) {
                 dest: 'javascripts/concat-js.js',
                 nonull: true
             }
+        },
+        // Config for uglify task. Should use this for JS, not concat.
+        // This is a better model, consuming bower packages directly, could 
+        // do the same w/ less task and probably concat.
+        uglify: {
+            modernizr: {
+                files: {
+                    'javascripts/modernizr.min.js': 'app/_bower_components/modernizr/modernizr.js'
+                }
+            }
         }, 
         // Config for watch task.
         watch: {
@@ -62,4 +72,5 @@ module.exports = function(grunt) {
     // Load contrib tasks.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 };
