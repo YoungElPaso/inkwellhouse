@@ -19,6 +19,6 @@
   "dependencies": {
     "bootstrap": "~3.1.1",
     "modernizr": "~2.7.2",
-    "jesse-bootstrap": "~0.1.0"
+    "jesse-bootstrap": "https://github.com/youngelpaso/jesse-bootstrap.git#~0.1.0"
   }
 }
