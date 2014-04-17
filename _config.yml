@@ -13,5 +13,11 @@ navigation:
   title: Contact us
 sociallinks:
 - text: facebook
-  url: https://www.facebook.com/jesseasutherland
+  url: https://www.facebook.com/joel.d.moran
   icon-class: uniF082
+- text: email
+  url: mailto:inkwellhouse@gmail.com
+  icon-class: uniF0E0
+- text: phone
+  url: tel:1-905-524-0150
+  icon-class: uniF095
