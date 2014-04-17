@@ -1,5 +1,4 @@
-jesse-website
+Inkwell House
 =============
 
-A Github Pages version of my new website, using Jekyll
-Gh branch
+The site for Inkwell House, a graphics company owned and run by Joel Moran in Hamilton, Ontario, Canada.  This site is built using GitHub Pages.
