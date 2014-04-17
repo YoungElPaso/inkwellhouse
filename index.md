@@ -1,9 +1,9 @@
 ---
 layout: default
-title: ProjectX
+title: Inkwell House
 ---
 
-Hola.
+
 ----
 
-Here are the musings and ramblings of Jesse Sutherland, a web developer living in  Montr&eacute;al.
+Inkwell House, Hamilton Ontario
