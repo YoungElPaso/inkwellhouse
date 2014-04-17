@@ -6419,7 +6419,7 @@ body {
 }
 
 header {
-    background: #000 url(../images/sunset-cropped.png) -100px -65px no-repeat;
+    background: #000 url(https://googledrive.com/host/0B_IavNgfTzO_em5JXzh1TE1fTGc/inkwell-bg.jpg) 50% 0;
     padding: 0.5em 0 0 0;
 }
 
@@ -6430,7 +6430,7 @@ footer {
 
 /* Logo */
 header h1 {
-    color: #FFF;
+    color: #222;
     display: block;
     font-size: 80px;
     font-weight: bold;
