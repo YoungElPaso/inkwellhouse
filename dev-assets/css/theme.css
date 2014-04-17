@@ -28,7 +28,6 @@ header h1 {
     height: 100px;
     text-align: center;
     text-transform: uppercase;
-    background: url(../images/logo-v2.png) 0 0 no-repeat;
 }
 /* Need to put in media query, shouldn't use all the time
 header h1 span.icon-ylp {
