@@ -1,4 +1,4 @@
-baseurl: "http://youngelpaso.github.io/inkwellhouse"
+baseurl: "http://inkwellhouse.com"
 exclude: ['node_modules', '_site', 'app']
 markdown: kramdown
 navigation:
