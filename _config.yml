@@ -5,22 +5,13 @@ navigation:
 - text: Home
   url: /
   title: Homepage
-- text: About
+- text: About Inkwell House
   url: /about/
-  title: About this site
-- text: Contact
+  title: About Inkwell House
+- text: Contact Us
   url: /contact/
-  title: Contact me
+  title: Contact us
 sociallinks:
-- text: google+
-  url: https://www.google.com/+JesseSutherland
-  icon-class: uniF0D4
-- text: linkedin
-  url: https://www.linkedin.com/in/jessesutherland
-  icon-class: uniF08C
 - text: facebook
   url: https://www.facebook.com/jesseasutherland
   icon-class: uniF082
-- text: github
-  url: https://github.com/youngelpaso
-  icon-class: uniF09B
