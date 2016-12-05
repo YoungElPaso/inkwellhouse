@@ -6471,7 +6471,7 @@ header h1 span {
     }
 }
 
-@media {min-width: 320px } {
+@media (min-width: 320px) {
     ul.nav {
         background: #ddd;
     }
