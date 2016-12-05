@@ -8,6 +8,9 @@ navigation:
 - text: About Inkwell House
   url: /about/
   title: About Inkwell House
+- text: Tattoos
+  url: /tattoos/
+  title: Tattoos
 - text: Contact Us
   url: /contact/
   title: Contact us
