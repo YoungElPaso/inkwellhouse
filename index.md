@@ -5,6 +5,15 @@ title: Inkwell House
 
 Welcome to Inkwell House
 ---
+
+
+<div class="jumbotron">
+    <div class="thumbnail">
+        <img style="margin:0 auto;" src="/images/saltlick.jpg" />
+        <p>Salt Lick BBQ Logo and t-shirts.</p>
+    </div>
+</div>
+
 <div class="jumbotron">
     <div class="thumbnail">
         <img style="margin:0 auto;" src="/images/wood.jpg" />
