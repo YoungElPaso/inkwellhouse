@@ -3,12 +3,9 @@ layout: default
 title: About Inkwell House
 ---
 
-Graphical Alchemy
----
-Inkwell House was established in 2011 as a multidisciplinary cadre of artists from various backgrounds representing different techniques and schools of thought.  Our purpose is to excell in the creation of unparalleled beauty and sophistication. 
+Inkwell House is a multi-disciplined cadre of artists. Our work ranges from sculpture to animation, sound experiment to silk screen.
 
-Inkwell House aims to provide skills and guidance for young artists in order to navigate through a political climate that has systematically reduced the importance of critical thought and flights of fancy by functioning as a modern sucessor to the medieval guild system.
-
+Inkwell House also aims to provide skills and guidance to young artists  navigating the often vague terrain of creative pursuits.  It is our hope to compile process and technique establishing a modern guild system.
 
 <blockquote style="display:none">
 "I'm gonna leave that stuff here, I'll be back for it tomorrow."
