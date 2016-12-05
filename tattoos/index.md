@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Inkwell House
+title: Tattoos @ Inkwell House
 ---
 
 
