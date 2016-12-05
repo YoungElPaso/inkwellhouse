@@ -3,6 +3,9 @@ layout: default
 title: About Inkwell House
 ---
 
+About Us
+---
+
 Inkwell House is a multi-disciplined cadre of artists. Our work ranges from sculpture to animation, sound experiment to silk screen.
 
 Inkwell House also aims to provide skills and guidance to young artists  navigating the often vague terrain of creative pursuits.  It is our hope to compile process and technique establishing a modern guild system.
